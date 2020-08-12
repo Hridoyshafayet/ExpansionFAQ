@@ -70,7 +70,6 @@ public class AdapterListExpand extends RecyclerView.Adapter<RecyclerView.ViewHol
             final ListModel p = items.get(position);
             view.tv_ques.setText(p.questions);
             view.tv_ans.setText(p.answers);
-
             view.bt_expand.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -94,9 +93,9 @@ public class AdapterListExpand extends RecyclerView.Adapter<RecyclerView.ViewHol
     private boolean toggleLayoutExpand(boolean show, View view, View lyt_expand) {
         toggleArrow(show, view, true);
         if (show) {
-            ViewAnimation.expand(lyt_expand);
+            lyt_expand.setVisibility(View.VISIBLE);
         } else {
-            ViewAnimation.collapse(lyt_expand);
+            lyt_expand.setVisibility(View.GONE);
         }
         return show;
     }

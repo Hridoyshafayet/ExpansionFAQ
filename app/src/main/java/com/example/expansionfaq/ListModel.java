@@ -8,11 +8,11 @@ public class ListModel {
     public String answers;
     public boolean expanded = false;
     public boolean parent = false;
-
     // flag when item swiped
     public boolean swiped = false;
 
     public ListModel() {
+
     }
 
     public ListModel(String questions, String answers) {

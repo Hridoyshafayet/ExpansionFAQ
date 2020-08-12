@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,21 +16,21 @@ import java.util.List;
 
 public class AdapterListExpand extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    private List<Social> items = new ArrayList<>();
+    private List<ListModel> items = new ArrayList<>();
 
 
     private Context ctx;
     private OnItemClickListener mOnItemClickListener;
 
     public interface OnItemClickListener {
-        void onItemClick(View view, Social obj, int position);
+        void onItemClick(View view, ListModel obj, int position);
     }
 
     public void setOnItemClickListener(final OnItemClickListener mItemClickListener) {
         this.mOnItemClickListener = mItemClickListener;
     }
 
-    public AdapterListExpand(Context context, List<Social> items) {
+    public AdapterListExpand(Context context, List<ListModel> items) {
         this.items = items;
         ctx = context;
     }
@@ -68,7 +67,7 @@ public class AdapterListExpand extends RecyclerView.Adapter<RecyclerView.ViewHol
         if (holder instanceof OriginalViewHolder) {
             final OriginalViewHolder view = (OriginalViewHolder) holder;
 
-            final Social p = items.get(position);
+            final ListModel p = items.get(position);
             view.tv_ques.setText(p.questions);
             view.tv_ans.setText(p.answers);
 

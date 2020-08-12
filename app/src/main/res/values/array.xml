@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="questions">
+        <item>Can I try App Press before I buy?</item>
+        <item>What\'s your cancellation policy?</item>
+        <item>Do I need my own Apple Developer account?</item>
+        <item>Is there App Press branding in my app?</item>
+
+    </string-array>
+
+    <string-array name="answers">
+
+        <item>You sure can. Our Build plan gives you access to App Press for free - sign up here!</item>
+        <item>You can cancel at any time and won\'t be billed for subsequent months. No hard feelings.</item>
+        <item>You will need a developer account to deploy your app to the App Store or Google Play. If you need help purchasing or setting up a developer account, our team is happy to help.</item>
+        <item>Any app you build has no indication it was created in App Press.</item>
+
+    </string-array>
+
+
+</resources>

@@ -17,8 +17,6 @@ import java.util.List;
 public class AdapterListExpand extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private List<ListModel> items = new ArrayList<>();
-
-
     private Context ctx;
     private OnItemClickListener mOnItemClickListener;
 
